@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "films_app_back",
+  "version": "0.0.1",
+  "description": "backend for films_app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --env-file=.env --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohamed Bentouhami",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.3"
+  }
+}
