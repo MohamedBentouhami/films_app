@@ -35,7 +35,7 @@ const movieController = {
         res.json(movie);
     },
     updateMovie: async (req, res) => {
-        const { name, description, release_date, duration, category_id, rating } = req.body;
+        const { id, name, description, release_date, duration, category_id, rating } = req.body;
         const movie = {
             name,
             description,
@@ -44,7 +44,7 @@ const movieController = {
             category_id,
             rating
         }
-        await movieRepository.updateMovie(movie);
+        await movieRepository.update(id, movie);
         res.json("Object updated successfully! ")
     },
     deleteMovie: async (req, res) => {

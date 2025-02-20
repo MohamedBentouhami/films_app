@@ -10,7 +10,7 @@ const movieRepository = {
     async getById(id){
         return movieModel.getById(id);
     },
-    async update(movie){
+    async update(id, movie){
         await movieModel.update(movie);
     },
     async delete(id){
