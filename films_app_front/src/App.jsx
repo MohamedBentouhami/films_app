@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx"
-import MoviesPage from "./pages/MoviesPage.jsx";
-import TopMoviePage from "./pages/TopMoviePage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
+import MoviesPage from "./pages/Movies/index.jsx";
+import TopMoviePage from "./pages/TopMovies/index.jsx";
+import AboutPage from "./pages/About/index.jsx";
 
 function App() {
 

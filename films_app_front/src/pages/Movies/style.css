@@ -1,0 +1,17 @@
+
+.movies{
+    display: flex;
+}
+
+.movie-card{
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 10rem;
+    background-color: beige;
+    margin: 2rem;
+    padding: 2rem;
+    h3{
+        text-align: center;
+    }
+}
