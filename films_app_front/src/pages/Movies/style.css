@@ -1,17 +1,26 @@
 
 .movies{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
 }
 
 .movie-card{
     display: flex;
     flex-direction: column;
-    height: 10rem;
-    width: 10rem;
-    background-color: beige;
+    height: 25rem;
+    width: 20rem;
+    border-radius: 15px;
+    background-color: var(--secondary);
     margin: 2rem;
     padding: 2rem;
     h3{
         text-align: center;
+    }
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 20em;
+        background-color: var(--secondary);
     }
 }

@@ -1,3 +1,15 @@
+:root {
+  --primary: #212121;
+  --secondary:  #4B164C;
+
+}
+
+*{
+  background-color: var(--primary);
+  color: white;
+  font-family: cursive;
+}
+
 .header{
   display: flex;
   justify-content: space-around;
