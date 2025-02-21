@@ -4,9 +4,9 @@ function Menu() {
 
     return <div>
         <nav className="menu">
-            <NavLink to="/">Movies </NavLink>
-            <NavLink to="top-movies">Top 10 </NavLink>
-            <NavLink to="/about">About </NavLink>
+            <NavLink to="/">Movies<i className="fa-solid fa-film"></i> </NavLink>
+            <NavLink to="top-movies">Top 10<i className="fa-solid fa-medal"></i></NavLink>
+            <NavLink to="/about">About<i className="fa-solid fa-inbox"></i></NavLink>
         </nav>
     </div>
 }

@@ -8,7 +8,7 @@ function MoviesPage() {
     const { movies, isLoading } = fetchMovies();
 
     return (
-        <div><h1>Movies Page</h1>
+        <div>
             {isLoading ? <p>Loading</p> : <div className='movies'> {movies.map((movie) => <MovieCard movie={movie} key={movie.id}></MovieCard>)} </div>}
         </div>
     )

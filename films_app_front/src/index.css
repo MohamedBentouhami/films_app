@@ -1,25 +1,54 @@
 :root {
   --primary: #212121;
-  --secondary:  #4B164C;
+  --secondary: #4B164C;
 
 }
 
-*{
+* {
   background-color: var(--primary);
   color: white;
   font-family: cursive;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.menu{
+
+.menu {
   display: flex;
   list-style: none;
-  a{
+
+  a {
     padding: 0 2em;
     text-decoration: none;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+
+    i {
+      color: white;
+      margin-left: 0.5em;
+    }
   }
+
+  a:hover {
+    background-color: var(--secondary);
+  }
+}
+
+.active {
+  opacity: 0.5;
+}
+
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  border-bottom: 5px solid var(--secondary);
+  display: inline-block;
+  padding-bottom: 5px;
 }

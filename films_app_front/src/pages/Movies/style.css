@@ -16,6 +16,7 @@
     padding: 2rem;
     h3{
         text-align: center;
+        background-color: var(--secondary);
     }
     img {
         object-fit: contain;
