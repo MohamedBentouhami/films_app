@@ -1,14 +1,14 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import client from "./config/db.js";
+import pool from "./config/db.js";
 import movieRouter from "./routers/movie.router.js";
 
 const { NODE_ENV, PORT, CLIENT_PORT } = process.env;
 
 const app = express();
 
-client.connect();
+pool.connect();
 app.use(cors({ origin: CLIENT_PORT }));
 
 app.use(express.json());

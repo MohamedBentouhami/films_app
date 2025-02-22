@@ -17,14 +17,15 @@ const movieController = {
     },
     addMovie: async (req, res) => {
         console.log(req.body);
-        const { name, description, release_date, duration, category_id, rating } = req.body;
+        const { name, description, release_date, duration, category_id, rating, url_img } = req.body;
         const movie = {
             name,
             description,
             release_date,
             duration,
             category_id,
-            rating
+            rating,
+            url_img
         }
         await movieRepository.addMovie(movie);
         res.json("Object added successfully! ")
