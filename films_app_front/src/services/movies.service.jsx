@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 const API_URL = "http://localhost:8080/api/movies";
 
-export function fetchMovies() {
+export function useFetchMovies() {
     const [movies, setMovies] = useState([]);
     const [isLoading, setLoading] = useState(true);
 
@@ -23,7 +23,4 @@ export function fetchMovies() {
 
 }
 
-export function fetchMoviesRated(){
-
-}
 

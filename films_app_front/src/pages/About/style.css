@@ -1,0 +1,7 @@
+.about-container{
+    margin: 5em;
+    h2, h3{
+        color: var(--secondary);
+        font-weight: bold;
+    }
+}
