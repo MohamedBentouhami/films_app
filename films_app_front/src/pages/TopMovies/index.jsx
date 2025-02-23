@@ -1,29 +1,28 @@
 import React from 'react'
+import { useMovies } from '../../context/MovieContext.jsx';
 import MovieRankedCard from '../../components/MovieRankedCard.jsx';
-import { fetchMovies } from '../../services/movies.service.jsx';
 import "./style.css"
 
 function TopMoviePage() {
-    const { movies, isLoading } = fetchMovies();
+    const { movies, isLoading, error } = useMovies();
 
-    // TODO context instead of two fetch
     return (
         <div>
             {isLoading ? <p>Loading</p> :
                 <table>
                     <thead>
                         <tr>
-                        <th>Ranking</th>
-                        <th>Title</th>
-                        <th>Rate</th>
+                            <th>Ranking</th>
+                            <th>Title</th>
+                            <th>Rate</th>
                         </tr>
 
                     </thead>
                     <tbody>
-                     {movies
-                    .sort((a, b) => b.rating - a.rating)
-                    .map((movie, index) =>
-                        <MovieRankedCard key={movie.id} movie={movie} index={index}></MovieRankedCard>)}
+                        {movies
+                            .sort((a, b) => b.rating - a.rating)
+                            .map((movie, index) =>
+                                <MovieRankedCard key={movie.id} movie={movie} index={index}></MovieRankedCard>)}
                     </tbody>
                 </table>}
         </div>)

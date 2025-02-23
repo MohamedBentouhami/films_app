@@ -1,11 +1,11 @@
 import React from 'react'
-import { useFetchMovies } from '../../services/movies.service.jsx'
 import MovieCard from '../../components/MovieCard.jsx';
+import {useMovies } from '../../context/MovieContext.jsx';
 import "./style.css";
 
 
 function MoviesPage() {
-    const { movies, isLoading } = useFetchMovies();
+    const { movies, isLoading, error } = useMovies();
 
     return (
         <div>

@@ -1,2 +1,4 @@
 films_app_back/node_modules/
 films_app_back/.env
+
+films_app_front/.env

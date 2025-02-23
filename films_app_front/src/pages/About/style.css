@@ -3,5 +3,6 @@
     h2, h3{
         color: var(--secondary);
         font-weight: bold;
+        text-shadow: 0.5px 0.5px 1px white, -0.5px -0.5px 1px white;
     }
 }
